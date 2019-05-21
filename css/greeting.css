@@ -1,0 +1,39 @@
+/* Top START */
+#greeting{
+    width: 100%;
+    height: 700px;
+    background-color: deeppink;
+    background-image: url(https://images2.alphacoders.com/559/559116.png);
+    color: white;
+/*    background-size: cover;*/
+    text-align: center;
+    font-size: 200%;
+
+    background-blend-mode: multiply;
+}
+#greeting h3{
+    padding-top: 20%;
+    color: burlywood;
+    font-size: 100%;
+}
+@media (max-width: 350px){
+    #greeting{
+        height: 800px;
+        background-size: cover;
+        font-size: 180%;
+    }
+    #greeting h3{
+        padding-top: 80%;
+    }
+}
+@media (max-width: 650px) and (min-width: 351px){
+    #greeting{
+        height: 800px;
+        background-size: cover;
+        font-size: 180%;
+    }
+    #greeting h3{
+        padding-top: 80%;
+    }
+}
+/* Top END */

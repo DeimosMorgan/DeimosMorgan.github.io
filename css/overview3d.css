@@ -1,0 +1,48 @@
+#overview{
+    float: left;
+    width: 100%;
+    height: 800px;
+    background-color: red;
+    background-image: url(http://img.desktopwallpapers.ru/other/pics/e8d4a4b023c73ae512b35-1600.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+    background-blend-mode: multiply;
+}
+#overview #container,
+#containerItemsOverview{
+    position: relative;
+}
+#overview #container{
+    height: 10%;
+}
+#containerItemsOverview{
+    height: 90%;
+}
+#overview h2, .sketchfab-embed-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#overview h2{
+    font-size: 250%;
+}
+.sketchfab-embed-wrapper iframe{
+    width: 600px;
+    height: 450px;
+}
+@media (max-width: 650px) and (min-width: 351px){
+    .sketchfab-embed-wrapper iframe{
+        width: 350px;
+        height: 450px;
+    }
+}
+@media (max-width: 350px){
+    .sketchfab-embed-wrapper iframe{
+        width: 320px;
+        height: 450px;
+    }
+}

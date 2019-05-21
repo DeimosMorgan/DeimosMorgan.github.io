@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
 @import url(header.css);
+@import url(greeting.css);
+@import url(description.css);
 @import url(footer.css);
 
 *{
@@ -25,111 +27,6 @@ h1, h2, h3, h4, h5, span{
 
 
 
-/* Top */
-#top{
-    width: 100%;
-    background-image: url(https://images2.alphacoders.com/559/559116.png);
-    background-blend-mode: multiply;
-    background-color: #cc0066;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    font-size: 3em;
-}
-#top h3{
-    color: #ccc;
-    padding-top: 20%;
-    font-size: 1.1em;
-}
-@media (min-width: 1001px){
-    #top{
-        font-size: 3em;
-        height: 700px;
-    }
-}
-@media (max-width: 1000px) and (min-width: 651px){
-    #top{
-        font-size: 1.8em;
-        height: 600px;
-    }
-}
-@media (max-width: 650px){
-    #top{
-        font-size: 1.8em;
-        padding-top: 20%;
-        height: 500px;
-    }
-}
-@media (max-width: 380px){
-    #top{
-        padding-top: 50%;
-    }
-}
-/* Top */
-
-/* AboutMe */
-#AboutMe{
-    height: 500px;
-    width: 100%;
-    float: left;
-    background-color: #f6f6f6;
-}
-#AboutMe #intro, #AboutMe #text{
-    width: 50%;
-    height: 100%;
-    
-    position: relative;
-}
-#AboutMe #intro{
-    float: left;
-}
-#AboutMe #text{
-    float: right;
-}
-#AboutMe #intro img, #AboutMe #text span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-#AboutMe #intro img{
-    width: 80%;
-    height: 80%;
-    
-    padding: 1%;
-    background-color: #fafafa;
-    border: 2px solid silver;
-}
-#AboutMe #text span{
-    font-size: 3em;
-    text-align: center;
-    width: 100%;
-}
-
-@media (max-width: 350px){
-    #AboutMe #intro img, #AboutMe #text span{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-    #AboutMe #intro img{
-        width: 80%;
-        height: 40%;
-
-        padding: 1%;
-        background-color: #fafafa;
-        border: 2px solid silver;
-    }
-    #AboutMe #text span{
-    font-size: 1.3em;
-    text-align: center;
-    width: 100%;
-}
-}
-
-
-/* AboutMe */
 
 /* Projects */
 #projects{

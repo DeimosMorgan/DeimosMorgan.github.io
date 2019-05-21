@@ -1,0 +1,57 @@
+/* Screenshots START */
+#screenshots{
+    float: left;
+    width: 100%;
+    height: 800px;
+    background-color: darkred;
+    background-image: url(https://media1.tenor.com/images/669f9e9981a7cb4bfe804c72fb79dbdc/tenor.gif?itemid=7811841);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+#screenshots #containerHeadline{
+    position: relative;
+    height: 10%;
+    width: 100%;
+}
+#containerItemsScreenshots{
+    position: relative;
+    height: 90%;
+    width: 100%;
+}
+#screenshots h2{
+    color: white;
+    text-align: center;
+    font-size: 250%;
+}
+#screenshots h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#screenshots #containerItemsScreenshots .itemScreenshots{
+    float: left;
+    width: 31%;
+    height: 29%;
+    margin: 1%;
+}
+#screenshots #containerItemsScreenshots .itemScreenshots img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid darkred;
+}
+#screenshots #containerItemsScreenshots .itemScreenshots img:hover{
+    border: 1px solid white;
+}
+
+@media (max-width: 650px){
+    #screenshots{
+         height: 1500px;   
+    }
+    #screenshots #containerItemsScreenshots .itemScreenshots{
+        width: 97%;
+        height: 10%;
+    }
+}
+/* Screenshots END */ 
