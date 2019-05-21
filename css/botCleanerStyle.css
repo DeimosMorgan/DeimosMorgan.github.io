@@ -1,0 +1,20 @@
+#screenshots{
+    height: 800px;
+}
+#screenshots #containerItemsScreenshots .itemScreenshots{
+        height: 30%;
+}
+@media (max-width:350px){
+    #screenshots{
+        height: 1500px;
+    }
+    #screenshots #container{
+        height: 10%;
+    }
+    #screenshots #containerItemsScreenshots{
+        height: 90%;
+    }
+    #screenshots #containerItemsScreenshots .itemScreenshots{
+        height: 10%;
+    }
+}
