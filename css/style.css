@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
+@import url(header.css);
+@import url(footer.css);
 
 *{
     margin: 0;
@@ -21,71 +23,7 @@ h1, h2, h3, h4, h5, span{
     font-weight: lighter;
 }
 
-/* Header */
 
-header{
-    width: 100%;
-    padding: 10px 0.5% 0px 0.5%;
-    background: transparent;
-    float: left;
-    position: fixed;
-}
-
-header #logo{
-    color: #fff;
-    cursor: pointer;
-}
-
-header #logo span{
-    font-size: 1.7em;
-    line-height: 45px;
-    margin-left: 40px;
-    font-family: 'Acme', sans-serif;
-    text-align: center;
-}
-
-@media (min-width: 701px){
-    #logo{
-        float: left;
-        width: 30%;
-        text-align: center;
-        /*font-size: 1.1em;*/
-    }
-    #about {
-        float: right;
-        width: 67%;
-    }
-}
-
-@media (max-width: 700px){
-    #logo{
-        margin-top 15px;
-        width: 100%;
-        /*font-size: 1.5em;*/
-        text-align: center;
-    }
-    #about {
-        float: left;
-        width: 100%;
-    }
-}
-
-/* Стили для фиксированной шапки */
-.fixed{
-    z-index: 5000;
-    background-color: #fff;
-    border-bottom: 1px solid silver;
-}
-header.fixed #logo{
-    color: #343434;
-}
-.fixed #linksOnContent a {
-   color: #343434;
-}
-.fixed #linksOnContent a:hover {
-   color: #7c7c7c;
-}
-/* Header */
 
 /* Top */
 #top{
@@ -128,28 +66,6 @@ header.fixed #logo{
     }
 }
 /* Top */
-
-/* Links on content of header */
-#linksOnContent{
-    text-align: center;
-    font-size: 1.3em;
-    line-height: 40px;
-    margin-bottom: 10px;
-    font-family: 'Acme', sans-serif;
-}
-#linksOnContent > a { 
-    color: #fff;
-    text-decoration: none;
-}
-#linksOnContent > a:hover{ 
-    color: #b0b0b0;
-    text-decoration: underline;
-}
-#linksOnContent > a:not(:last-child){
-    margin-right: 10%;
-}
-/* Links on content of header*/
-
 
 /* AboutMe */
 #AboutMe{
@@ -344,52 +260,3 @@ header.fixed #logo{
     background-color: #c15443;
 }
 /* Contacts */
-/* Part of Footer */
-/* Start */
-#footer{
-    background-color: black;
-    
-    width: 100%;
-    height: 100px;
-    float: left;
-    
-    text-align: center;
-}
-#footer a{
-    text-decoration: none;
-    
-    width: 20%;
-    font-size: 2em;
-}
-#footer span, #footer a{
-    color: white;
-}
-#footer a:hover{
-    color: darkred;
-}
-#leftPartFooter, #rightPartFooter{    
-    height: 100%;
-    
-    position: relative;
-}
-#leftPartFooter{  
-    width: 80%;
-    float: left;
-}
-#rightPartFooter{  
-    width: 20%;
-    float: right;
-}
-#widget-social, #rightPartFooter a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-#widget-social li{
-    list-style: none;
-    display: inline-block;
-    
-    margin-right: 5%;
-}
-/* End */

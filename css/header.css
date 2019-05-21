@@ -1,0 +1,77 @@
+/* Header START */
+header span, a{
+    font-size: 100%;
+    
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
+    color: black;
+}
+
+header{
+    position: fixed;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    background-color: white;
+    border-bottom: 10px solid white;
+}
+header #logo{
+    float:left;
+    width: 30%;
+    height: 100%;
+    /*    color: #fff;*/
+    cursor: pointer;
+}
+header #logo, header #linksOnContent{
+    position: relative;
+}
+header #linksOnContent #containerLinks{
+    width: 100%;
+}
+header #logo span, header #linksOnContent #containerLinks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header #logo span{
+    text-align: center;
+    line-height: 100%;
+}
+header #linksOnContent{
+    float: right;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+header #linksOnContent #containerLinks a{
+    margin-right: 10%;
+}
+header #linksOnContent #containerLinks a:hover{
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+/*
+#linksOnContent > a:not(:last-child){
+    margin-right: 10%;
+}
+*/
+
+.fixed span,.fixed a{
+    color: white;
+}
+
+.fixed {
+    z-index: 1000;
+    background-color: black;
+    border-bottom: 10px solid darkred;
+    opacity: 1;
+}
+.fixed #logo{
+    color: #343434;
+}
+.fixed #linksOnContent #containerLinks a:hover {
+   color: #7c7c7c;
+}
+/* Header END */

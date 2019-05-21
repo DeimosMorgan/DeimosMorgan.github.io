@@ -19,12 +19,22 @@
         <!-- Header start -->
         <header>
             <div id="logo" onclick="slowScroll('#top')">
-                <span>Eugene</span>
-            </div>    
+                <span>
+                    Eugene
+                </span>
+            </div> 
             <div id="linksOnContent">
-                <a href="#" title = "About me" onclick = "slowScroll('#AboutMe')">About me</a>
-                <a href="#" title = "Projects" onclick = "slowScroll('#projects')">Projects</a>
-                <a href="#" title = "Contacts" onclick = "slowScroll('#contacts')">Contacts</a>
+                <div id="containerLinks">  
+                    <a href="#" title = "About me" onclick = "slowScroll('#AboutMe')">
+                        About me
+                    </a>
+                    <a href="#" title = "Projects" onclick = "slowScroll('#projects')">
+                        Projects
+                    </a>
+                    <a href="#" title = "Contacts" onclick = "slowScroll('#contacts')">
+                        Contacts
+                    </a>
+                </div>
             </div>
         </header>
         <!-- Header end -->        
@@ -114,7 +124,7 @@
         <!-- Contacts end -->
         
         <!-- Footer start -->
-        <footer id="footer">
+        <footer>
             <div id = "leftPartFooter">
                 <ul id="widget-social">
                     <li>
@@ -135,12 +145,13 @@
                     <span>
                         &copy;Eugene | 2019
                     </span>
-            </ul>
+                </ul>
+                
             </div>
             <div id = "rightPartFooter">
                 <a href="#" class="fas fa-arrow-alt-circle-up" onclick = "slowScroll('#top')"></a>
             </div>
-    </footer>
+        </footer>
         <!-- Footer end -->
         
         <script>
