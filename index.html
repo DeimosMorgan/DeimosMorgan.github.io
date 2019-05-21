@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Portfolio</title>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src = "js/main.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Header start -->
+        <header>
+            <div id="logo" onclick="slowScroll('#top')">
+                <span>Eugene</span>
+            </div>    
+            <div id="linksOnContent">
+                <a href="#" title = "About me" onclick = "slowScroll('#AboutMe')">About me</a>
+                <a href="#" title = "Projects" onclick = "slowScroll('#projects')">Projects</a>
+                <a href="#" title = "Contacts" onclick = "slowScroll('#contacts')">Contacts</a>
+            </div>
+        </header>
+        <!-- Header end -->        
+
+        <div id="top">
+            <h3>Hello, my name is</h3>
+            <h1>Eugene</h1>
+        </div>
+        
+        <!-- About me start -->
+        <div id="AboutMe">
+            <div id="intro">
+                <img src="https://i.pinimg.com/564x/30/fa/e0/30fae05c57ed7a37fe936c5378fed552.jpg" alt="My photo">
+            </div>
+            <div id="text">
+                <span>
+                    Here are the projects that I created. You can consider them and then send me mail with your opinion.
+                </span>
+            </div>
+        </div>
+        <!-- About me end -->
+        
+        <!-- Projects start -->
+        <div id="projects">
+            <h2>
+                Projects
+            </h2>
+            <h4>
+                which I made
+            </h4>
+            
+            <!-- Devil -->
+            <div class="img">
+                <a href="devil.html"><img src="https://i.pinimg.com/originals/35/6a/56/356a5679490bc76c22e2a85966cf288f.png" alt="devil">
+                <span>Devil</span></a>
+            </div>
+            
+            <!-- Try to Survive -->
+            <div class="img">
+                <a href="trytosurvive.html">
+                    <img src="https://i.pinimg.com/564x/39/f6/02/39f6022ea797cb2e062dde4abf7aace2.jpg" alt="Try to survive">
+                    <span>
+                        Try to survive
+                    </span>
+                </a>
+            </div>
+            
+            <!-- DoChoose -->
+            <div class="img">
+                <a href="dochoose.html"><img src="https://github.com/DeimosMorgan/MyGameDoChoose/blob/master/Assets/UIImage/Logo.png?raw=true" alt="DoChoose">
+                    <span>
+                        DoChoose
+                    </span>
+                </a>
+            </div>
+            
+        </div>
+        <!-- Projects end -->
+        
+        <!-- Contacts start -->
+        <div id="contacts">
+             <center>
+                 <h5>
+                     Contacts
+                 </h5>
+             </center>
+             <form action="https://formspree.io/gloriaeugeneovchinnikov@gmail.com" method="POST" id="form_input" >
+                 <label for="name">Name <span>*</span></label><br>
+                 <input type="text" placeholder="Enter name" name = "name" id = "name"><br>
+                 
+                 <label for="email">Your email <span>*</span></label><br>
+                 <input type="text" placeholder="Enter email" name = "email" id = "email"><br>
+                
+                 <label for="message">Message <span>*</span></label><br>
+                 <textarea placeholder="Enter message" name = "message" id = "message"></textarea><br>
+                 
+                 <button type = "submit" id = "submit">Send</button>
+                 
+             </form>
+         </div>
+        <!-- Contacts end -->
+        
+        <!-- Footer start -->
+        <footer id="footer">
+            <div id = "leftPartFooter">
+                <ul id="widget-social">
+                    <li>
+                       <a href="https://www.pinterest.com/SomieDNagroM/" class="fab fa-pinterest"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/SomieDNagroM" class="fab fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC3h4gw09yxv6fUfcBcsSXcw?view_as=subscriber" class="fab fa-youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SomieDNagrom" class="fab fa-github"></a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/developer?id=Somied+Nagrom" class="fab fa-google-play"></a>
+                    </li>
+                    <span>
+                        &copy;Eugene | 2019
+                    </span>
+            </ul>
+            </div>
+            <div id = "rightPartFooter">
+                <a href="#" class="fas fa-arrow-alt-circle-up" onclick = "slowScroll('#top')"></a>
+            </div>
+    </footer>
+        <!-- Footer end -->
+        
+        <script>
+            function slowScroll(id){
+                $('html, body').animate({
+                    scrollTop: $(id).offset().top
+                }, 1000);
+            }
+
+            $(document).on("scroll", function() {
+                if($(window).scrollTop() === 0)
+                    $("header").removeClass("fixed");
+                else
+                    $("header").attr("class", "fixed");
+            })
+        </script>
+    </body>
+</html>

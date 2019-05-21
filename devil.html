@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Project: Devil</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style3.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Header start -->
+        <header>
+            <div id="logo" onclick="slowScroll('#top')">
+                <span>
+                    Devil
+                </span>
+            </div>    
+            <div id="linksOnContent">
+                <a href="index.html" title = "Main">
+                   Main
+                </a>
+                <a href="#" title = "Description" onclick = "slowScroll('#description')">
+                    Description
+                </a>
+                <a href="#" title = "Overview" onclick = "slowScroll('#overview')">
+                    3D Overview
+                </a>
+                <a href="#" title = "Screenshots" onclick = "slowScroll('#screenshots')">
+                    Screenshots
+                </a>
+            </div>
+        </header>
+        <!-- Header end -->   
+
+        <div id="top">
+                <h3>Project</h3>
+                <h1>Devil</h1>
+</div>
+
+        <!-- description me start -->
+        <div id="description">
+            <div id="intro">
+                <img src="https://i.pinimg.com/564x/c7/69/02/c76902ed131aff0b908222233c3ff210.jpg" alt="Description">
+            </div>
+            <div id="text">
+                <span>
+                    This model is a cute imp. Once I saw a drawn model of this imp and wanted to create it and add it to some personal project. And I created it and tried to animate, but problems arose due to its non-standard hands. Therefore, he remain a static model.
+                </span>
+            </div>
+        </div>
+        <!-- description me end -->
+
+        <!-- overview start -->
+        <div id="overview">
+           <div id = "container">
+                <h2>
+                3D Overview
+            </h2>
+            </div>
+            <div id = "containerItemsOverview">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe src="https://sketchfab.com/models/e727f9d57be84d5eb467f1eef0f50753/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true">
+                    </iframe>
+
+                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                        <a href="https://sketchfab.com/models/e727f9d57be84d5eb467f1eef0f50753?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">
+                            Devil
+                        </a>
+                        by <a href="https://sketchfab.com/SomiedNagrom?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">
+                            SomiedNagrom
+                        </a>
+                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">
+                            Sketchfab
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- overview end -->
+
+        <!-- screenshots start -->
+        <div id="screenshots">
+            <div id = "container">
+               <h2>
+                Screenshots
+            </h2>
+            </div>
+            
+            <div id = "containerItemsScreenshots">
+                <div class="itemScreenshots">
+                   <img src="https://i.pinimg.com/564x/2d/a8/3b/2da83bb68ff808b580588e47a8b41d1f.jpg" class="minimized" alt="screenshots">
+                </div>
+                <div class="itemScreenshots">
+                   <img src="https://i.pinimg.com/564x/c7/69/02/c76902ed131aff0b908222233c3ff210.jpg" class="minimized" alt="screenshots">
+
+                </div>
+                <div class="itemScreenshots">
+                   <img src="https://i.pinimg.com/564x/df/86/38/df86388ccc81bf164214aff103f39ac7.jpg" class="minimized" alt="screenshots">
+
+                </div>
+            </div>
+        </div>
+        <!-- screenshots end -->
+
+        <!-- Footer start -->
+        <footer id="footer">
+            <div id = "leftPartFooter">
+                <ul id="widget-social">
+                    <li>
+                       <a href="https://www.pinterest.com/SomieDNagroM/" class="fab fa-pinterest"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/SomieDNagroM" class="fab fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC3h4gw09yxv6fUfcBcsSXcw?view_as=subscriber" class="fab fa-youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DeimosMorgan" class="fab fa-github"></a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/developer?id=Somied+Nagrom" class="fab fa-google-play"></a>
+                    </li>
+                    <span>
+                        &copy;Eugene | 2019
+                    </span>
+            </ul>
+            </div>
+            <div id = "rightPartFooter">
+                <a href="#" class="fas fa-arrow-alt-circle-up" onclick = "slowScroll('#top')"></a>
+            </div>
+    </footer>
+        <!-- Footer end -->
+
+        <script>
+                function slowScroll(id){
+                    $('html, body').animate({
+                        scrollTop: $(id).offset().top
+                    }, 1000);
+                }
+
+                $(document).on("scroll", function() {
+                    if($(window).scrollTop() === 0)
+                        $("header").removeClass("fixed");
+                    else
+                        $("header").attr("class", "fixed");
+                })
+        </script>
+        <script>
+            $(function(){
+                $('.minimized').click(function(event) {
+                    var i_path = $(this).attr('src');
+                    $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="close-popup"><i></i></div></div>');
+                    $('#magnify').css({
+                        left: ($(document).width() - $('#magnify').outerWidth())/2,
+                        top: ($(window).height() - $('#magnify').outerHeight())/2
+                    });
+                $('#overlay, #magnify').fadeIn('fast');
+                });
+                $('body').on('click', '#close-popup, #overlay', function(event) {
+                    event.preventDefault();
+
+                    $('#overlay, #magnify').fadeOut('fast', function() {
+                      $('#close-popup, #magnify, #overlay').remove();
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

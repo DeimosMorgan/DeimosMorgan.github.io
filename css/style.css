@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+h1, h2, h3, h4, h5, span{
+    font-family: 'Acme', sans-serif;
+    font-weight: lighter;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo{
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span{
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+@media (min-width: 701px){
+    #logo{
+        float: left;
+        width: 30%;
+        text-align: center;
+        /*font-size: 1.1em;*/
+    }
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px){
+    #logo{
+        margin-top 15px;
+        width: 100%;
+        /*font-size: 1.5em;*/
+        text-align: center;
+    }
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* Стили для фиксированной шапки */
+.fixed{
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+header.fixed #logo{
+    color: #343434;
+}
+.fixed #linksOnContent a {
+   color: #343434;
+}
+.fixed #linksOnContent a:hover {
+   color: #7c7c7c;
+}
+/* Header */
+
+/* Top */
+#top{
+    width: 100%;
+    background-image: url(https://images2.alphacoders.com/559/559116.png);
+    background-blend-mode: multiply;
+    background-color: #cc0066;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+#top h3{
+    color: #ccc;
+    padding-top: 20%;
+    font-size: 1.1em;
+}
+@media (min-width: 1001px){
+    #top{
+        font-size: 3em;
+        height: 700px;
+    }
+}
+@media (max-width: 1000px) and (min-width: 651px){
+    #top{
+        font-size: 1.8em;
+        height: 600px;
+    }
+}
+@media (max-width: 650px){
+    #top{
+        font-size: 1.8em;
+        padding-top: 20%;
+        height: 500px;
+    }
+}
+@media (max-width: 380px){
+    #top{
+        padding-top: 50%;
+    }
+}
+/* Top */
+
+/* Links on content of header */
+#linksOnContent{
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-family: 'Acme', sans-serif;
+}
+#linksOnContent > a { 
+    color: #fff;
+    text-decoration: none;
+}
+#linksOnContent > a:hover{ 
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+#linksOnContent > a:not(:last-child){
+    margin-right: 10%;
+}
+/* Links on content of header*/
+
+
+/* AboutMe */
+#AboutMe{
+    height: 500px;
+    width: 100%;
+    float: left;
+    background-color: #f6f6f6;
+}
+#AboutMe #intro, #AboutMe #text{
+    width: 50%;
+    height: 100%;
+    
+    position: relative;
+}
+#AboutMe #intro{
+    float: left;
+}
+#AboutMe #text{
+    float: right;
+}
+#AboutMe #intro img, #AboutMe #text span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+#AboutMe #intro img{
+    width: 80%;
+    height: 80%;
+    
+    padding: 1%;
+    background-color: #fafafa;
+    border: 2px solid silver;
+}
+#AboutMe #text span{
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 350px){
+    #AboutMe #intro img, #AboutMe #text span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    #AboutMe #intro img{
+        width: 80%;
+        height: 40%;
+
+        padding: 1%;
+        background-color: #fafafa;
+        border: 2px solid silver;
+    }
+    #AboutMe #text span{
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+}
+}
+
+
+/* AboutMe */
+
+/* Projects */
+#projects{
+    float: left;
+    background-image: url(https://images6.alphacoders.com/774/774373.jpg);
+    background-blend-mode: multiply;
+    background-color: #4f1c65;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    height: 500px;
+}
+#projects h2{
+    font-size: 4em;
+}
+#projects h4{
+    color: #ccc;
+    font-size: 1.5em;
+}
+#projects .img{
+    float: left;
+    width: 20%;
+    margin: 50px 20px 0px 20px;
+}
+#projects img:hover{
+    border: 2px solid darkred;
+}
+/*#projects .img:nth-child(odd){
+    margin-left: 18%;
+}*/
+#projects img{
+    background: transparent;
+    background-blend-mode: multiply;
+    background: black;
+    /*padding: 5px;*/
+    border: 2px solid silver;
+/*    float: left;*/
+    width: 100%;
+    height: 200px;
+    max-width: 300px;
+    color: #ccc;
+    
+}
+#projects span{
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+    color: #fff;
+}
+@media (max-width: 700px){
+    #projects .img{
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+    #projects{
+        height: 1200px;
+    }
+}
+/* Projects */
+/* Contacts */
+#contacts{
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid #ccc;
+    background-color: #f4f4f4;
+}
+#contacts h5{
+    font-size: 3em;
+    color: #4f4f4f;
+}
+/* Form for input */
+#form_input{
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+@media (max-width: 700px){
+    #form_input{
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+#form_input label{
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Acme', sans-serif;
+    
+}
+#form_input label > span{
+    color: #e87e7e;
+}
+#form_input input, #form_input textarea{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+#form_input textarea{
+    height: 100px;
+}
+#form_input input:focus, #form_input textarea:focus{
+    border-color: #333;
+}
+#submit{
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #ec6550;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Acme', sans-serif;
+}
+#submit:hover{
+    background-color: #c15443;
+}
+/* Contacts */
+/* Part of Footer */
+/* Start */
+#footer{
+    background-color: black;
+    
+    width: 100%;
+    height: 100px;
+    float: left;
+    
+    text-align: center;
+}
+#footer a{
+    text-decoration: none;
+    
+    width: 20%;
+    font-size: 2em;
+}
+#footer span, #footer a{
+    color: white;
+}
+#footer a:hover{
+    color: darkred;
+}
+#leftPartFooter, #rightPartFooter{    
+    height: 100%;
+    
+    position: relative;
+}
+#leftPartFooter{  
+    width: 80%;
+    float: left;
+}
+#rightPartFooter{  
+    width: 20%;
+    float: right;
+}
+#widget-social, #rightPartFooter a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#widget-social li{
+    list-style: none;
+    display: inline-block;
+    
+    margin-right: 5%;
+}
+
+/* End */
