@@ -1,0 +1,20 @@
+@import url(screenshots.css);
+
+#screenshots{
+         height: 1500px;   
+    }
+#screenshots #containerItemsScreenshots .itemScreenshots{
+    width: 31%;
+    height: 12%;
+}
+
+@media (max-width: 650px){
+    #screenshots{
+         height: 3500px;   
+    }
+    #screenshots #containerItemsScreenshots .itemScreenshots{
+        align-content: center;
+        width: 96%;
+        height: 5%;
+    }
+}

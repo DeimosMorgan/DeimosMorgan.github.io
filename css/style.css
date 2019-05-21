@@ -3,6 +3,7 @@
 @import url(greeting.css);
 @import url(description.css);
 @import url(footer.css);
+@import url(zoomer.css);
 
 *{
     margin: 0;
@@ -24,9 +25,6 @@ h1, h2, h3, h4, h5, span{
     font-family: 'Acme', sans-serif;
     font-weight: lighter;
 }
-
-
-
 
 /* Projects */
 #projects{
@@ -87,7 +85,7 @@ h1, h2, h3, h4, h5, span{
         margin-left: 10%!important;
     }
     #projects{
-        height: 1200px;
+        height: 1350px;
     }
 }
 /* Projects */
